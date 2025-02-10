@@ -25,4 +25,4 @@ jobs:
           context: ./project 
           file: ./project/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERUSER }}/techtrends:latest
+          tags: ${{ secrets.DOCKERUSER }}/techtrends:${{ github.sha }}
