@@ -1,6 +1,7 @@
 namespace: staging
 service:
   port: 5111
+  containerPort: 3111
 replicaCount: 3
 resources:
   techtrends:

@@ -1,6 +1,7 @@
 namespace: prod
 service:
   port: 7111
+  containerPort: 3111
 image:
   pullPolicy: Always
 replicaCount: 5
