@@ -18,7 +18,7 @@ spec:
         image: {{ $.Values.image.repository }}:{{ $.Values.image.tag }}
         imagePullPolicy: {{ $.Values.image.pullPolicy }}
         ports:
-          - containerPort: {{ $.Values.containerPort }}
+          - containerPort: {{ $.Values.service.containerPort }}
         {{- if index $.Values.resources "techtrends" }}
         resources:
           {{- toYaml (get $.Values.resources "techtrends") | nindent 12 -}}
