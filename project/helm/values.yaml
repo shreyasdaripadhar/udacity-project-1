@@ -6,7 +6,7 @@ service:
   type: ClusterIP
   containerPort: 3111
 image:
-  repository: techtrends
+  repository: shreyasdaripadhar/techtrends
   tag: latest
   pullPolicy: IfNotPresent
 replicaCount: 1
