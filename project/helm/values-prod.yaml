@@ -4,7 +4,7 @@ service:
   containerPort: 3111
 image:
   pullPolicy: Always
-replicaCount: 5
+replicaCount: 1
 resources:
   techtrends:
     requests:
